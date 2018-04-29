@@ -1,0 +1,20 @@
+version: "2"
+services:
+  monitor:
+    container_name: monitor
+    image: nanonodemonitor
+    ports:
+      - "9090:9090"
+    networks:
+      - backbone
+  nodejs:
+    container_name: nano
+    image: nanocurrency/nano
+    networks:
+    - backbone
+    expose: 
+    - 8080
+networks:
+  backbone:
+    driver: bridge
+
