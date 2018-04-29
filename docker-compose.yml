@@ -20,6 +20,8 @@ services:
     expose:
       - "7075"
       - "7076"
+    ports:
+            - "7076:7076"
 networks:
   backbone:
     driver: bridge
