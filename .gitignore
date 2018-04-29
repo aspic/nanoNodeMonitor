@@ -1,2 +1,4 @@
 .vscode/
 modules/config.php
+docker/RaiBlocks/
+docker/config.php

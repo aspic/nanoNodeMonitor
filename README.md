@@ -51,14 +51,13 @@ $nanoNodeRPCPort = '7076';
 
 Build Docker image by:
 
-    $ docker build .
+    $ docker build . -t nanomonitor
 
 Run server with:
 
     $ docker run -p 80:80 -v /path/to/modified/config.php:/var/www/html/modules/config.php
 
 Test server by pointing your browser to `http://localhost:80`
-
 
 ## Updating
 Switch to your installation directory and execute `git pull`.

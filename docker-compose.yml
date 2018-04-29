@@ -3,7 +3,7 @@ version: "3"
 services:
   nanomonitor:
     container_name: nanomonitor
-    image: e277ba36a139
+    image: nanomonitor
     ports:
     - "80:80"
     networks:
