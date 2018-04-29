@@ -1,19 +1,20 @@
-version: "2"
+version: "3"
+
 services:
-  monitor:
-    container_name: monitor
-    image: nanonodemonitor
+  nanomonitor:
+    container_name: nanomonitor
+    image: e277ba36a139
     ports:
-      - "9090:9090"
+    - "80:80"
     networks:
       - backbone
-  nodejs:
+    volumes:
+      - ./config/config.php:/var/www/html/modules/config.php
+  nano:
     container_name: nano
     image: nanocurrency/nano
     networks:
     - backbone
-    expose: 
-    - 8080
 networks:
   backbone:
     driver: bridge
