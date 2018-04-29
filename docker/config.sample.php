@@ -35,10 +35,10 @@
 // ----------- Nano Node Variables -----------
 
 // ip address for RPC (default: [::1])
-// $nanoNodeRPCIP   = '[::1]';
+$nanoNodeRPCIP   = 'nano';
 
 // ip address for RPC (default: 7076)
-// $nanoNodeRPCPort = '7076';
+$nanoNodeRPCPort = '7076';
 
 // account of this node 
 // $nanoNodeAccount = 'xrb_1f56swb9qtpy3yoxiscq9799nerek153w43yjc9atoaeg3e91cc9zfr89ehj'; 

@@ -9,12 +9,17 @@ services:
     networks:
       - backbone
     volumes:
-      - ./config/config.php:/var/www/html/modules/config.php
+      - ./docker/config.php:/var/www/html/modules/config.php
   nano:
     container_name: nano
     image: nanocurrency/nano
     networks:
-    - backbone
+      - backbone
+    volumes:
+      - ./docker:/root
+    expose:
+      - "7075"
+      - "7076"
 networks:
   backbone:
     driver: bridge
